@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: azure;
+}
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main_contents{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card{
+    width: 200px;
+    height: 500x;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 2px;
+}
+
+span{
+    font-family: 'Dancing Script', cursive;
+}
+.card img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.card_01{
+    z-index: 200;
+    top:50%;
+    left:30%;
+    transform: translate(-30%,-50%);
+    transition: 0.5s;
+}
+
+.back_card{
+    z-index: 190;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgb(50, 50, 155);
+    border-radius: 5%;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-20%,-50%);
+}
+
+.card_02{
+    z-index: 150;
+    top:60%;
+    left:49%;
+    transform: translate(-50%,-65%);
+    transition: 0.5s;
+}
+
+.back_card2{
+    z-index: 140;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgb(48, 117, 79);
+    border-radius: 5%;
+    cursor: pointer;
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%,-65%);
+}
+
+.card_03{
+    z-index: 100;
+    top: 70%;
+    left:68.4%;
+    transform: translate(-70%,-80%);
+    transition: 0.5s;
+}
+
+.back_card3{
+    z-index: 0;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgb(128, 59, 138);
+    border-radius: 5%;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left:80%;
+    transform: translate(-80%,-80%);
+}
+
+.back_card:hover .card_01{
+    top: 30%;
+    transition: 0.5s;
+}
+
+
+.back_card2:hover .card_02{
+    top: 40%;
+    transition: 0.5s;
+}
+
+.back_card3:hover .card_03{
+    top: 50%;
+    transition: 0.5s;
+}
+
+
+.back_card:hover{
+    z-index: 300;
+    background-color: rgb(209, 230, 255);
+    transition: 0.5s;
+}
+
+.back_card2:hover{
+    z-index: 300;
+    background-color: rgb(190, 255, 190);
+    transition: 0.5s;
+}
+
+.back_card3:hover{
+    z-index: 300;
+    background-color: rgb(243, 230, 255);
+    transition: 0.5s;
+}
