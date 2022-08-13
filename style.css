@@ -44,7 +44,7 @@ span{
     z-index: 200;
     top:50%;
     left:30%;
-    transform: translate(-30%,-50%);
+    transform:translate(-30%,-50%);
     transition: 0.5s;
 }
 
@@ -59,7 +59,7 @@ span{
     position: absolute;
     top:50%;
     left:20%;
-    transform: translate(-20%,-50%);
+    transform:translate(-20%,-50%);
 }
 
 .card_02{
@@ -109,17 +109,20 @@ span{
 .back_card:hover .card_01{
     top: 30%;
     transition: 0.5s;
+    transform:scale(1.2) translate(-25%,-50%);
 }
 
 
 .back_card2:hover .card_02{
     top: 40%;
     transition: 0.5s;
+    transform:scale(1.2)translate(-42%,-60%);
 }
 
 .back_card3:hover .card_03{
     top: 50%;
     transition: 0.5s;
+    transform:scale(1.2)translate(-58%,-70%);
 }
 
 
